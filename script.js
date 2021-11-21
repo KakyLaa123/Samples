@@ -28,7 +28,7 @@ let itsPossible = false;
 takeIt.addEventListener('click', (e) => {
     e.preventDefault();
     for(let i = 0; i < inputs.length - 1; i++){    
-        if(inputs[i].value !== '' && inputs[i].value !== 0){
+        if(inputs[i].value !== '' && inputs[i].value > 0){
         itsPossible = true;
         } else {
             itsPossible = false;
