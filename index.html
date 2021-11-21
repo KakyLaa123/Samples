@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div  class="header">
+            <div class="header-h1">
+                <h1>
+                    Оценка
+                    <br>
+                    физического
+                    <br>
+                    развития
+                </h1>
+            </div>
+            <div class="header-pic">
+                <img src="img/header-pic.PNG" alt="Кант" height="200" width="auto">
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="#">
+            <div class="age">
+                <label for="age">Возраст:</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div class="weight inputs">
+                <label for="weight">Масса тела в кг:</label>
+                <input type="number" name="weight" id="weight">
+            </div>
+            <div class="height inputs">
+                <label for="height">Рост стоя в см:</label>
+                <input type="number" name="height" id="height">
+            </div>
+            <div class="inhale inputs">
+                <label for="inhale">Окружность грудной клетки на вдохе в см:</label>
+                <input type="number" name="inhale" id="inhale">
+            </div>
+            <div class="exhalation inputs">
+                <label for="exhalation">Окружность грудной клетки на выдохе в см:</label>
+                <input type="number" name="exhalation" id="exhalation">
+            </div>
+            <div class="bp inputs">
+                <label for="bp">Артериальное давление:</label>
+                <input type="number" name="bp1" id="bp1">
+                <input type="number" name="bp2" id="bp2">
+            </div>
+            <div class="pulse-calm inputs">
+                <label for="pulse-calm">Пульс в состоянии покоя:</label>
+                <input type="number" name="pulse-calm" id="pulse-calm">
+            </div>
+            <div class="breathing_rate inputs">
+                <label for="breathing_rate">Частота дыхания за 1 минуту:</label>
+                <input type="number" name="breathing_rate" id="breathing_rate">
+            </div>
+            <div class="submit">
+                <input type="submit" value="РАССЧИТАТЬ" id="takeIt">
+            </div>
+        </form>
+        <div class="results hidden">
+            <span>Индекс Кетле: <span id="ketle"></span></span>
+            <span>Экскурсия грудной клетки: <span id="excurtion"></span></span>
+            <span>Проба Руфье: <span id="rufie"></span></span>
+            <span>Оценка адаптационного потенциала: <span id="oap"></span></span>
+            <div class="button"><button id="hide">ОК</button></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
